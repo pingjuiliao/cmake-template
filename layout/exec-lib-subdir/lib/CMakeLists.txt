@@ -5,7 +5,8 @@ add_library(MyLib foo.cc)
 ### some weird stuff:
 #  target_include_directories is not really required here because
 #  the header file and the source file is in the same directory (linux)
-# However, adding the following lines (3 choose 1)
+# However, adding target_include_directories can fix some linking issue.
+#  each effect is descirbed as follow:
 
 # 1 # main.cc linked successfully includes the foo.h
 #
